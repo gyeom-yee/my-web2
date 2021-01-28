@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .font{ font-weight: bold; font-size: 20px;}
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <h2>CSS Reference</h2>
+      <ul>
+        <li>해당 속성이 어떤 변화를 일으키고 어떻게 동작하는지 파악할 수 있습니다.</li>
+        <li>기본 값</li>
+        <li>상속 여부</li>
+        <li>애니메이션 가능 여부</li>
+        <li>사용 가능한 CSS버전</li>
+      </ul>
+    </fieldset><br>
+
+    <fieldset>
+      <dl>
+        <dt><a href="https://www.w3schools.com/" target="_blank">w3schools</a></dt>
+        <dd>속성의 간단한 스펙과 예제를 확인할 때 유용</dd>
+        <dt><a href="https://developer.mozilla.org/" target="_blank">MDN</a></dt>
+        <dd>개발적 버그 추가적인 스펙 대해서 확인할 때 유용</dd>
+      </dl>
+    </fieldset><br>
+
+    <fieldset>
+      <h2>절대 길이</h2>
+      <p>절대 길이는 고정된 크기 단위로, 다른 요소의 크기에 의해 영향을 받지 않음</p>
+      <dl>
+        <dt>★px ( 1px = 1/96th of 1 inch )</dt>
+        <dd>화면에서 고정된 크기를 가지지만, 장치의 해상도에 따라 상대적</dd>
+        <dd>디자인 통일 및 호환성 측면에서 유리한 구조</dd>
+        <dd>디자인 의도가 많이 반영된 웹사이트의 경우 픽셀 단위를 사용하는 것을 권장</dd>
+      </dl>
+      <dl>
+        <dt>☆pt ( 1pt - 1/72 of 1 inch )</dt>
+        <dd>인쇄용 문서를 위한 스타일을 적용할 때 유용하게 사용</dd>
+        <dd>해상도에 따라 차이가 있어 W3C에서도 pt는 웹개발 시 비추</dd>
+        <dd>Windows에서는 9pt = 12px, Mac에서는 9pt = 9px</dd>
+        <dd>실무에서 pt로 가이드를 줄 경우 px로 변화하여 사용</dd>
+      </dl>
+    </fieldset><br>
+
+    <fieldset>
+      <h2>상대 길이</h2>
+      <p>상대 길이는 다른 요소의 크기나 폰트 크기, 브라우저 등의 크기에 따라 상대적으로 값이 변함</p>
+      <ul>
+        <li>%: 부모의 값에 대해서 백분율로 환산한 크기를 갖게 됩니다.</li>
+        <li>em: font-size를 기준으로 값을 환산합니다. 소수점 3자리까지 표현 가능</li>
+      </ul>
+    </fieldset><br>
+
+    <fieldset>
+      <span style="background-color: red">anything</span>
+      <span style="background-color: #0f0">anything</span>
+      <span style="background-color: blue">anything</span>
+      <br>
+      <span class="font" style="color: red;">Heading</span>
+      <span class="font" style="color: #ff0000;">Heading</span>
+      <span class="font" style="color: #f00;">Heading</span><!--6자리의 16진수에서 각각의 두 자리가 같은 값을 가지면 3자리로 축약하여 사용-->
+      <span class="font" style="color: rgb(255,0,0);">Heading</span>
+      <span class="font" style="color: rgba(255,0,0, 0.5);">Heading</span><!--투명도 조절, 소수점 단위-->
+      <br>
+      <span class="font" style="color: #ff0000;">Heading</span>
+      <span class="font" style="color: #00ff00;">Heading</span>
+      <span class="font" style="color: #0000ff;">Heading</span>
+    </fieldset>
+    
+  </body>
+</html>

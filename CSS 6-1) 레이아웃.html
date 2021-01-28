@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1><레이아웃></h1>
+        <dl>
+            <dt>1. visibility 속성</dt>
+            <dd>visibility: visible | hidden | collapse | initial | inherit;</dd>
+            <ul><div style="font-size: 20px">★display: none과 차이점</div>
+                <li>display: none: 요소가 렌더링 되지 않음(DOM에 존재하지 않음)</li>
+                <li>visibility: hidden: 요소가 보이지는 않지만 렌더링 되며 화면에 공간을 가지고 있음(DOM에 존재함)</li>
+            </ul>
+
+            <dt>2. float 속성</dt>
+            <dd>float: none | left | right | initial | inherit;</dd>
+            <dd>- 요소를 보통의 흐름에서 벗어나 띄어지게 함 주변 텍스트나 인라인 요소가 주위를 감싸는 특징이 있음</dd>
+            <dd>- 대부분 요소의 display 값을 block으로 변경함 (display 값 변경 예외: inline-table, flex 등)</dd><br>
+
+            <dt>3. clear 속성</dt>
+            <dd>clear: none | left | right | both | initial | inherit;</dd>
+            <dd>- block-level 요소만 적용 가능</dd><br>
+
+            <dt>4. position 속성</dt>
+            <dd>position: static | absolute | fixed | relative | sticky | initial | inherit;</dd><br>
+
+            <dt>5. z-index 속성(툴팁, 도움말 레이어 박스 같은 것에 사용)</dt>
+            <dd>z-index: auto | number | initial | inherit;</dd>
+            <ul>
+                <li>position 값이 static이 아닌 경우 지정가능</li>
+                <li>순서 값이 없을 경우 생성순서(코드상 순서)에 따라 쌓임</li>
+                <li>부모가 z-index 값이 있을 경우 부모 안에서만 의미있음</li>
+                <li>큰 값이 가장 위쪽(음수 사용 가능)</li>
+            </ul>
+
+            <span style="font-style: italic; font-size: 20px"><b>HTML / CSS 유효성 검사</b></span>
+            <a href="https://validator.w3.org/" target="_blank">The W3C Markup Validation Service</a>
+
+        </dl>
+    </body>
+</html>

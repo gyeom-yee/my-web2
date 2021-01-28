@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen"> /*클래스를 이용한 선택자*/
+      .html{color:purple;}
+      .css{text-decoration: underline;}
+      #pick{font-size: 30px;}
+      .html.css{border:1px solid;}
+    </style>
+  </head>
+
+  <body>
+    h1 {<br>
+    color: yellow;<br>
+    font-size:2em;<br>
+    }<br><br>
+    선택자(selector) - "h1"<br>
+    속성(property) - "color" / html의 속성은 Attribute<br>
+    값(value) - "yellow"<br>
+    선언(declaration) - "color: yellow", "font-size: 2em"<br>
+    선언부(declaration block) - "{ color: yellow; font-size:2em; }"<br>
+    규칙(rule set) - "h1 { color: yellow; font-size:2em; }"<br><br>
+    <p style="color:red;"> 내용 </p><!--직접 스타일 속성 부여, 재활용 안되서 잘안씀--><br>
+    <!--<style> div {color: red;} </style>head에 사용 / 문서에 <style>을 활용한 방법, 페이지가 많고 스타일 규칙 내용이 많아지면 안씀-->
+    <!--<link rel="stylesheet" href="./style.css">head에 사용 / CSS 파일을 만들고 스타일 규칙을 선언, <link>을 이용해서 CSS 파일을 연결-->
+    <dl>
+      <dt class="html">HTML</dt>
+      <dd><span class="html">HTML</span>은 문서의 구조를 나타냅니다.</dd>
+      <dt class="css">CSS</dt>
+      <dd><span class="css">CSS</span>는 문서의 표현을 나타냅니다.</dd>
+      <dt class="html css">JS</dt>
+      <dd><span class="html css">JS</span>는 문서의 동작을 나타냅니다.</dd>
+      <p id="pick">id 선택자는 해쉬# 기호를 사용합니다.</p>
+        <ol>
+          <li>기호가 아닌 #기호 사용</li>
+          <li>태그의 class 속성이 아닌 id 속성을 참조</li>
+          <li>문서 내에 유일한 요소에 사용</li>
+          <li>구체성</li>
+        </ol>
+    </dl>
+  </body>
+</html>

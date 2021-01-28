@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>border</title>
+  <style>
+    div {
+        border-width: 10px; /* 두께 <length> |thin|medium|thick */
+        border-style: solid; /* 종류 none | hidden|dotted|dashed|solid|double|groove|ri */
+        border-color: #000; /* 색상*/
+        border: 10px solid #000; /*단축속성*/
+        width: 500px;
+        margin: auto /*브라우저 계산, 가로축 중앙 정렬(요소에 width값 필요)*/
+        /*margin collapse(마진 병합) 주의*/
+
+        /* width: 300px;
+        height: 100px;
+        margin: -10px -10px 20px 30px;  %는 상하좌우의 방향에 관계없이 모두 요소의 width 값을 기준으로 값이 결정
+        padding: 10px 20px 30px 40px;  padding 음수 사용 불가 
+        width와 height + padding + border = 요소의 전체 크기(Box size) */
+    }
+  </style>
+</head>
+<body>
+    <div> css border 속성 실습 </div>
+</body>
+</html>

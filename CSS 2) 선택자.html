@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p[class = "foo"] { color: silver; }
+      p[id= "title"] { text-decoration: underline; }
+
+      p[class~="color"] { font-style: italic; }/*class 속성의 값이 공백으로 구분한 "color" 단어가 포함되는 요소 선택*/
+      p[class^="color"] { font-style: italic; }/*class 속성의 값이 "color"로 시작하는 요소 선택*/
+      p[class$="color"] { font-style: italic; }/*class 속성의 값이 "color"로 끝나는 요소 선택*/
+      p[class*="color"] { font-style: italic; }/*class 속성의 값이 "color" 문자가 포함되는 요소 선택*/
+
+      div span { color: red; }
+      div > h1 { color: orange; }
+      div + p { color: lightgreen; }
+
+      li:first-child { color: red; }
+      li:last-child { color: blue; }
+    </style>
+  </head>
+  <!--//////////////////////////////////////////////////////////////////////-->
+  <body>
+    <p class="foo">Hello</p>
+    <p class="bar">CSS</p>
+    <p class="baz" id="title">HTML</p>
+
+    <p class="color hot">red</p>
+    <p class="cool color">blue</p>
+    <p class="colorful nature">rainbow</p>
+
+    <div>
+      <h1><span>HTML</span>: Hyper Text Markup Language</h1>
+    </div>
+    <p>HTML과 CSS와 JAVASCRIPT를 이용해서 멋진 웹 사이트를 제작할 수 있습니다.</p>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+
+  </body>
+</html>

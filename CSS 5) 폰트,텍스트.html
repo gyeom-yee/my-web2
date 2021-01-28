@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            dl{line-height: 1.6;}
+        </style>
+    </head>
+    <body>
+        <h1>< 폰트 속성 ></h1>
+        <dl>
+            <dt>1. font-family 속성</dt>
+            <dd style="font-family: Dotum, Helvetica, '돋움', Apple SD Gothic Neo, sans-serif">
+            font-family: family-name | generic-family ( | initial | inherit );</dd><br>
+
+            <dt>2. line-height 속성</dt>
+            <dd>line-height: normal | number | length | initial | inherit ;</dd>
+            <dd>예시) body { font-size: 20px; line-height: 2; } </dd>
+            <dd>* 부모 요소의 숫자 값이 그대로 상속되게끔 절대값을 쓰는게 좋음</dd><br>
+
+            <dt>3. font-size 속성</dt>
+            <dd>font-size: keyword | length | initial | inherit ;</dd>
+            <dd style="font-size: 20px">예시) .parent {font-size: 20px;} .child {font-size: 1em;} </dd><br>
+
+            <dt>4. font-weight 속성</dt>
+            <dd style="font-weight: bold">font-weight: <span style="color: red">normal</span> | <span style="color: red">bold</span> | bolder | lighter | number | initial | inherit ;</dd><br>
+
+            <dt>5. font-style 속성</dt>
+            <dd style="font-style: italic">font-style: normal | <span style="color: red">italic</span> | oblique | initial | inherit;</dd><br>
+
+            <dt>6. font-variant 속성</dt>
+            <dd style="font-variant: small-caps">Font-Variant: Small-Caps font-variant: normal | small-caps | initial | inherit ;</dd><br>
+
+            <dt><s>7. font 축약형 속성</s>(실무에선 지양)</dt>
+            <dd style="font: italic 2em "돋움", dotum, sans-serif;">font: font-style font-variant font-weight font-size/line-height font-family | initial | inherit;</dd><br>
+
+            <dt>8. @font-face 속성</dt>
+            <dd>웹에 있는 글꼴을 사용자의 로컬 환경(컴퓨터)으로 다운로드하여 적용하는 속성</dd>
+            <ul>
+                <li>family(필수): 글꼴의 이름을 지정(그냥 명시 목적)</li>
+                <li>src(필수): 다운로드 받을 글꼴의 경로(URL)</li>
+                <li>font-style(옵션): 글꼴의 스타일 지정, 기본 값은 normal</li>
+                <li>font-weight(옵션): 글꼴의 굵기 지정, 기본 값은 normal</li>
+            </ul><br>
+
+            <dt>9. vertical-align 속성</dt>
+            <dd>vertical-align: <span style="vertical-align: 10px">keyword</span> | length | percent | initial | inherit ;</dd>
+            <dd>* 음수는 아래로, 인라인라벨에만 선언가능</dd><br>
+
+            <dt>10. text-align 속성</dt>
+            <dd style="text-align: center">text-align: left | right | center | justify | initial | inherit ;</dd>
+            <ul>※ text-align과 display의 관계
+                <li>text-align은 inline-level에 적용</li>
+                <li>블록요소 정렬방법: 박스모델 챕터에서 다룬 margin의 auto 값을 이용</li>
+                <li>가운데 정렬 인라인 요소 : text-align (center) 블럭 요소 :  margin (auto)</li>
+                <li>요소의 레벨에 따라 정렬하는 방식</li>
+            </ul><br>
+
+            <dt>11. text-indent 속성</dt>
+            <dd style="text-indent: 100px">text-indent: length | initial | inherit;</dd><br>
+
+            <dt>12. text-decoration 속성</dt>
+            <dd>text-decoration: text-decoration-line text-decoration-color text-decoration-style | initial | inherit;</dd>
+            <dd> <span style="text-decoration: none">none</span> |
+                 <span style="text-decoration: underline">underline</span> |
+                 <span style="text-decoration: overline">overline</span> |
+                 <span style="text-decoration: line-through">line-through</span>
+            </dd><br>
+
+            <dt>13. white-space 속성</dt>
+            <dd>white-space: normal | nowrap | pre | pre-line | pre-wrap | initial | inherit;</dd>
+            <ul>< 속성 값 >
+                <li>normal: 공백, 개행X / 필요한 경우 자동 줄바꿈 O 기본 값</li>
+                <li>nowrap: 공백, 개행X / 자동 줄바꿈 X</li>
+                <li>pre: 공백, 개행 O / 자동 줄바꿈 X</li>
+                <li>pre-wrap: 공백O, 개행X / 필요한 경우 자동 줄바꿈 O </li>
+            </ul><br>
+
+            <dt>14. letter-spacing 속성</dt>(자간 지정)
+            <dd style="letter-spacing: 5px">letter-spacing: normal | length | initial | inherit;</dd><br>
+
+            <dt>15. word-spacing 속성</dt>
+            <dd style="word-spacing: 20px">word-spacing: normal | length | initial | inherit;</dd><br>
+
+            <dt>16. word-break 속성</dt>
+            <dd>word-break: normal | break-all | keep-all | initial | inherit;</dd>
+            <dd>단어가 라인 끝에 나올 경우 어떻게 처리할지(중단점) 지정하는 속성</dd><br>
+
+            <dt>17. word-wrap 속성</dt>
+            <dd>word-wrap: normal|break-word|initial|inherit;</dd>
+            <dd>요소를 벗어난 단어의 줄바꿈을 지정하는 속성</dd><br>
+
+
+        </dl>
+    </body>
+</html>
